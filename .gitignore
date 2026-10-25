@@ -1,0 +1,26 @@
+# secrets
+.env
+
+# data and outputs
+data/*
+!data/.gitkeep
+wandb/
+mlruns/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# os / editors
+.DS_Store
+.vscode/
+notes/.obsidian/workspace*
+
+# private research notes (kept local, never pushed)
+notes/
+# generated notebook exports
+results/*.html

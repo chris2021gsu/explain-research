@@ -1,0 +1,34 @@
+[project]
+name = "explainkit"
+version = "0.1.0"
+description = "Plain-language, tool-grounded explanations for regression and forecasting models"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Christy George" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "lightgbm",
+    "shap",
+    "litellm",
+    "python-dotenv",
+    "pyyaml",
+]
+
+[project.urls]
+Homepage = "https://github.com/chris2021gsu/explain-research"
+
+[project.optional-dependencies]
+dev = ["pytest", "wandb", "jupyter"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/explainkit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
