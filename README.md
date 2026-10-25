@@ -35,6 +35,8 @@ number that didn't come from a tool.
 | How accurate is the model, and where is it worst? | `model_errors` (needs `y`) |
 | Will doing X *cause* Y? | `flag_unanswerable`: says honestly that the model can't answer causal questions |
 
+See [examples/quickstart.py](examples/quickstart.py) for a complete runnable example.
+
 All tools also work without an LLM: `ex.explain_change(last_week, this_week)` returns the numbers directly.
 
 ## A list of questions, as a report
